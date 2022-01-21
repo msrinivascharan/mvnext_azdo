@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "MscMaven",
+    "name": "MscMaven",
+    "version": "0.0.7",
+    "publisher": "Srinivascharanmamidi",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tools for building/releasing MSC.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "MscMavenV3/icon.png"        
+    },
+    "files": [
+        {
+            "path": "MscMavenV3"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "MscMavenV3"
+            }
+        }
+    ]
+}
